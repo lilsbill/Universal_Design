@@ -1,0 +1,39 @@
+body
+{
+    background-color: rgb(219, 236, 251);
+}
+
+h1, h2, h3, a
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(15, 34, 177);
+}
+
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  display:flex;
+  justify-content: center;
+}
+
+ul li 
+{
+  float: right;
+}
+
+li a 
+{
+  display: block;
+  color: rgb(15, 34, 177);
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover 
+{
+  background-color: rgb(15, 34, 177);
+  color: white;
+}
