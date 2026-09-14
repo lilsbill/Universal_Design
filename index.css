@@ -4,7 +4,7 @@ body
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1, h2, h3, a
+h1, h2, h3, a, p
 {
   color:rgb(15, 34, 177);
   align-items: center;
@@ -20,17 +20,17 @@ hr
 
 h1
 {
-  font-size: 75px;
+  font-size: 60px;
 }
 
 h2
 {
-  font-size: 45px;
+  font-size: 40px;
 }
 
 a
 {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .all
@@ -41,6 +41,11 @@ a
   border-radius: 50px;
 }
 
+.about_me
+{
+  display: flex;
+}
+
 .title
 {
   /*background-color: rgb(219, 236, 251);*/
@@ -49,14 +54,32 @@ a
   text-align: center;
 }
 
-.aboutme
+.about_text
 {
-  padding-left: 30px;
+  font-size: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-bottom: 30px;
-  padding-right: 700px;
   background-color: rgb(219, 236, 251);
   border: 20px solid #fefefe; 
   border-radius: 50px;
+  line-height: 1.5;
+}
+
+img
+{
+  background-color: rgb(219, 236, 251);
+  border: 20px solid #fefefe; 
+  border-radius: 50px;
+}
+
+.foot
+{
+  background-color: rgb(219, 236, 251);
+  border: 20px solid #fefefe; 
+  border-radius: 50px;
+  font-size: 10px;
+  padding-left: 20px;
 }
 
 ul 
