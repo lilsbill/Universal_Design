@@ -1,13 +1,21 @@
 body
 {
   background-color: rgb(254, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1, h2, h3, a
 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color:rgb(15, 34, 177);
   align-items: center;
+}
+
+hr
+{
+  border: 2px solid rgb(15, 34, 177);
+  width: 93%;
+  margin: 20px auto;
+  border-radius: 6px;
 }
 
 h1
@@ -25,19 +33,27 @@ a
   font-size: 35px;
 }
 
-.title
+.all
 {
+  border: 20px solidrgb(219, 236, 251); 
   background-color: rgb(219, 236, 251);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   border: 20px solid #fefefe; 
   border-radius: 50px;
 }
 
+.title
+{
+  /*background-color: rgb(219, 236, 251);*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .aboutme
 {
-  padding: 50px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-right: 700px;
   background-color: rgb(219, 236, 251);
   border: 20px solid #fefefe; 
   border-radius: 50px;
@@ -46,7 +62,7 @@ a
 ul 
 {
   list-style-type: none;
-  background-color: #fefefe;
+  /*background-color: #fefefe;*/
   display:flex;
   justify-content: center;
 }
