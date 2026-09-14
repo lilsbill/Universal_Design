@@ -99,12 +99,13 @@ li a
 {
   display: block;
   color: rgb(15, 34, 177);
-  padding: 20px 30px;
+  padding: 20px 35px;
   text-decoration: none;
 }
 
 li a:hover 
 {
   background-color: rgb(15, 34, 177);
+  border-radius: 20px;
   color: white;
 }
