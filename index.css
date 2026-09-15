@@ -28,11 +28,6 @@ h2
   font-size: 45px;
 }
 
-a
-{
-  font-size: 30px;
-}
-
 .all
 {
   border: 20px solidrgb(219, 236, 251); 
@@ -46,12 +41,30 @@ a
   display: flex;
 }
 
+.dog_photos
+{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  justify-content: center
+}
 .title
 {
   /*background-color: rgb(219, 236, 251);*/
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.dog
+{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 20px solidrgb(219, 236, 251); 
+  background-color: rgb(219, 236, 251);
+  border: 20px solid #fefefe; 
+  border-radius: 50px;
 }
 
 .about_text
@@ -80,6 +93,7 @@ img
   border-radius: 50px;
   font-size: 10px;
   padding-left: 20px;
+  padding-bottom: 10px;
 }
 
 ul 
@@ -88,6 +102,7 @@ ul
   /*background-color: #fefefe;*/
   display:flex;
   justify-content: center;
+  font-size: 30px;
 }
 
 ul li 
