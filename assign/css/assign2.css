@@ -22,3 +22,32 @@ section
 {
     padding-bottom: 20px;
 }
+
+.container
+{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.sr-only 
+{
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+nav ul li a:visited
+{
+    color:purple;
+}
+
+nav ul li a:hover
+{
+    color:green;
+}
