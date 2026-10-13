@@ -1,0 +1,18 @@
+table, th, td
+{
+    border-collapse: collapse;
+}
+
+caption
+{
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: 900;
+}
+
+td
+{
+    border: 2px solid red;
+    padding-right: 50px;
+}
+
