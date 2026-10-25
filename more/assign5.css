@@ -1,0 +1,87 @@
+.sr-only 
+{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+header, nav, main, footer 
+{
+  padding: 1em;
+  max-width: 900px;
+  margin: auto;
+}
+
+body
+{
+    font-family: "Noto Sans Mayan Numerals", sans-serif;
+}
+
+table 
+{
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1em;
+  
+}
+
+caption 
+{
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+th
+{
+  border: 1px solid #888;
+  padding: 0.5em;
+}
+
+td
+{
+  border: 1px solid #888;
+  padding: 0.5em;
+}
+
+th 
+{
+  background-color: #eee;
+}
+
+form 
+{
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+label 
+{
+  display: block;
+  margin-top: 0.5em;
+}
+
+input, textarea 
+{
+  width: 98%;
+  padding: 0.4em;
+  margin-top: 0.2em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button
+{
+    width: 20%;
+    height: 20%;
+    font-size: 20px;
+    
+}

@@ -5,30 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assign5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mayan+Numerals&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
-    <header>Table</header>
-    <table>
-        <caption>Caption</caption>
-        <thead>
-            <th scope="col">text</th>
-            <th scope="col">text</th>
-            <th scope="col">text</th>
-        </thead>
-        <tbody>
-            
-            <tr>
-                <td>Simba</td>
-                <td>Tigger</td>
-                <td>Winney</td>
-            </tr>
-            <tr>
-                <td>Cecil</td>
-                <td>Tygra</td>
-                <td>Baloo</td>
-            </tr>
-            
-        </tbody>
-    </table>
+    <h1 class="sr-only">Accessible Navigation</h1>
+    <nav class="skip-nav" aria-label="Skip navigation">
+        <h2 class="sr-only">Skip Navigation</h2>
+        <a href="#main">Skip to main content</a>
+    </nav>
+
+    <header aria-label="Page header">
+        <h1>Site Tables, Forms, Tabbed Browing and Screen Reading</h1>
+        <time datetime="2026-10-25">October 25, 2026</time>
+    </header>
+
+    <nav aria-label="Main site navigation">
+        <h2 class="sr-only">Main Site Navigation</h2>
+        <ul>
+            <li><a href="#about"><span class="material-symbols-outlined" aria-hidden="true">info</span> About</a></li>
+            <li><a href="#table"><span class="material-symbols-outlined" aria-hidden="true">tv_gen</span> Tv Shows</a></li>
+            <li><a href="#form"><span class="material-symbols-outlined" aria-hidden="true">mail</span> Form</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section id="about">
+            <h2>About This Page</h2>
+            <p>This page is a simple demonstration of accessible and semantic HTML. It includes a skip link, navigation, a basic table, and a form.
+                The entire site can be navigated using only a screenreader.  
+            </p>
+        </section>
+
+        <section id="table">
+            <h2>Longest Running Scripted American TV Shows</h2>
+            <p id="table-desc">This table lists the longest running American scripted TV shows</p>
+
+            <table>
+                <caption>TV Shows</caption>
+                <thead>
+                    <th scope="col">Show Name</th>
+                    <th scope="col">Seasons</th>
+                    <th scope="col">Show Start</th>
+                    <th scope="col">Currently Running</th>
+                    <th scope="col">Episode Numbers</th>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>The Simpsons</td>
+                        <td>38</td>
+                        <td>1989</td>
+                        <td>Yes</td>
+                        <td>812</td>
+                    </tr>
+                    <tr>
+                        <td>Law & Order SVU</td>
+                        <td>28</td>
+                        <td>1999</td>
+                        <td>Yes</td>
+                        <td>597</td>
+                    </tr>
+                    <tr>
+                        <td>Law & Order</td>
+                        <td>26</td>
+                        <td>1990</td>
+                        <td>Yes</td>
+                        <td>547</td>
+                    </tr>
+                    <tr>
+                        <td>Family Guy</td>
+                        <td>25</td>
+                        <td>1999</td>
+                        <td>Yes</td>
+                        <td>510</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section id="form">
+            <h2>TV Show Form</h2>
+
+            <form action="#" method="post" aria-label="Contact form">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required />
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+
+                <label for="phone">
+                    Phone
+                </label>
+                <input type="tel" id="phone" minlength="7" required>
+               
+
+                <label for="message">Favorite TV Show</label>
+                <textarea id="message" name="message" required></textarea>
+                <br> <br>
+
+                <button type="submit">Submit</button>
+            </form>
+        
+        </section>
+    </main>
 </body>
 </html>
