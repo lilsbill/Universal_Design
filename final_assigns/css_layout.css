@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+header, nav, main, aside, footer 
+{
+  padding: 1.5em;
+  border: 1px black solid;
+}
+
+header, footer 
+{
+  text-align: center;
+}
+
+nav ul 
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+nav ul li 
+{
+  list-style: none
+}
+
+*, *:before, *:after 
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body 
+{
+  background: rgb(57, 170, 214);
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+h1, h2, h3 
+{
+  font-family: 'Bricolage Grotesque', serif;
+  font-weight: heavy;
+  padding: .2em 0;
+}
+
+p 
+{
+  margin: 1.8em 0;
+  line-height: 1.8em;
+}
+
+h2 
+{
+    font-size:1.25em;
+}
+
+.main_container 
+{
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgb(255, 88, 247);
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns:
+   1fr       2fr       1fr;
+  grid-template-areas:
+  "heady     heady     heady"
+  "navvy     navvy     navvy"
+  "aside1    mainy     aside2"
+  "aside1    mainy     aside2"
+  "aside1    mainy     aside2"
+  "footy     footy     footy";
+}
+
+header 
+{
+    grid-area: heady; background:rgb(245, 236, 66);
+}
+
+nav 
+{
+    grid-area: navvy; background:rgb(133, 155, 164);
+}
+
+main 
+{
+    grid-area: mainy; background: rgb(205, 103, 123); 
+    max-height: 100%;
+}
+
+#aside_one 
+{
+    grid-area: aside1; background: rgb(241, 202, 174);
+}
+
+#aside_two 
+{
+    grid-area: aside2; background: rgb(191, 226, 246);
+}
+
+footer 
+{
+    grid-area: footy; background: rgb(166, 164, 127);
+}
+
+@media screen and (min-width: 641px) and (max-width: 900px)  
+{
+    .main_container
+    {
+        grid-template-columns:
+        1fr 1fr;
+        grid-template-areas:
+        "heady heady"
+        "navvy navvy"
+        "mainy mainy"
+        "aside1 aside2"
+        "footy footy";
+    }
+}
+
+@media screen and (max-width: 640px)  
+{
+    .main_container 
+    {
+        grid-template-columns:
+        1fr;
+        grid-template-areas:
+        "heady"
+        "mainy"
+        "aside1"
+        "aside2"
+        "navvy"
+        "footy";
+    }
+    nav ul 
+    {
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+    nav ul li a 
+    {
+        display: block;
+        padding: 10px 5px;
+        margin: 5px;
+        border: 1px black solid;
+        background: white;
+    }
+}
+
