@@ -44,14 +44,14 @@ h2
 .top
 {
   border: 20px solidrgb(219, 236, 251); 
-  background-color: rgb(76, 159, 214);
+  background-color: rgb(34, 136, 187);
   border: 20px solid #fefefe; 
   border-radius: 50px;
+  color: white;
 }
 
 main
 {
-  display: flex;
   color:rgb(15, 34, 177);
 }
 
@@ -72,23 +72,23 @@ section
   border-radius: 50px;
   line-height: 1.5;
   padding-top: 20px;
-}
-
-img
-{
-  background-color: rgb(219, 236, 251);
-  border: 20px solid #fefefe; 
-  border-radius: 50px;
+  background-color: rgb(135, 206, 241);
+  color: black;
+  padding-bottom: 20px;
 }
 
 footer
 {
-  background-color: rgb(219, 236, 251);
+  background-color: rgb(191, 235, 255);
   border: 20px solid #fefefe; 
   border-radius: 50px;
   font-size: 15px;
   padding-left: 20px;
   padding-bottom: 2px;
+  color:black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 ul 
@@ -96,7 +96,7 @@ ul
   list-style-type: none;
   display:flex;
   justify-content: center;
-  font-size: 25px;
+  font-size: 25px; 
 }
 
 ul li 
@@ -107,9 +107,10 @@ ul li
 li a 
 {
   display: block;
-  color: rgb(15, 34, 177);
-  padding: 20px 35px;
+  color: white;
+  padding: 20px 100px;
   text-decoration: none;
+  font-size: 30px;
 }
 
 li a:hover 
